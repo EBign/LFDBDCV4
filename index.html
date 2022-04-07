@@ -1,0 +1,281 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="var.js" type="text/javascript" charset="utf-8" async defer></script>
+        <link rel="shortcut icon" type="image/x-icon" href="Icone.ico" />
+        <link rel="canonical" href="https://www.monsite.fr"/>
+        <link rel="stylesheet" type="text/css" href="magnify.css">
+        <title>La Ferme du bout du chemin</title>
+        <meta name="description" content="Productrices bio de calvados, cidre et jus de pomme dans le pays d'auge situé en Normandie"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <meta property="analytics-track" content="monsite - index/tab"/>
+        <meta property="analytics-s-channel" content="pageAccueil"/>
+        <meta property="og:title" content="La Ferme du bout du chemin"/>
+        <meta property="og:description" content="Description">
+        <meta property="og:url" content="https://www.le-blog-pz.com" />
+	    <meta property="og:locale" content="fr_FR" />
+	    <meta property="og:image" content="Une image qui représente mon site.jpg" />
+	    <meta property="og:type" content="website" />
+	    <meta property="og:site_name" content="La Ferme du bout du chemin" />
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+
+        <header>
+            <a href="#accueil"><img src="logolfdbdcblancalpha.png" class="logo"></a>
+            <div class="bouttonnav" id="bouttonnav">
+                  <div class="barre" id="barre1"></div>
+                  <div class="barre" id="barre2"></div>
+                  <div class="barre" id="barre3"></div>
+            </div>
+            <nav>
+                <ul>
+                    <a href="#gamme">
+                        <li> <div class="titregammeplus">La gamme</div>
+                            <ul>
+                                <a href="#calvados"><li><mark class="classeproduit">&nbsp;&nbsp;Notre Calvados</mark></li></a>
+                                <a href="#cidre"><li><mark class="classeproduit">&nbsp;&nbsp;Nos cidres</mark></li></a>
+                                <a href="#pommeau"><li><mark class="classeproduit">&nbsp;&nbsp;Notre Pommeau</mark></li></a>
+                                <a href="#jusdepomme"><li><mark class="classeproduit">&nbsp;&nbsp;Notre jus de pomme</mark></li></a>
+                                <a href="#vinaigre"><li><mark class="classeproduit">&nbsp;&nbsp;Notre vinaigre</mark></li></a>
+                            </ul>
+                        </li>
+                    </a>
+                    <a href="#histoire">
+                        <li><div class="titregamme">L'histoire de la ferme</div>
+                        </li>
+                    </a>
+                    <a href="#actualites"><li><div class="titregamme">Actualités</div></li></a>
+                    <a href="#map"><li><div class="titregamme">Où nous trouver ?</div></li></a>
+                </ul>
+            </nav>
+            <div class="verticale"></div>
+            <div class="deco1"></div>
+            <div class="deco2"></div>
+            <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+            <script type="text/javascript" src="var.js" async defer></script>
+        </header>
+
+
+        <section class="accueil" id="accueil">
+            <video controls class="videoplay">
+                <source src="videocrop.mp4" type="video/mp4">
+             </video>
+             <section class="coordo">
+                 <div class="text">
+                 <h3>lafermeduboutduchemin14 @gmail.com</h3>
+                 <h3>-</h3>
+                 <h3>02 31 62 27 24</h3>
+                 <h3>-</h3>
+                 <h3>1086 route de Crèvecoeur</h3>
+                 <h3>Saint Laurent du Mont</h3>
+                 <h3>En face de l'église Au bout du chemin</h3>
+                 <h3>-</h3>
+                 <h3>Du lundi au samedi 9h-12h 14h-18h30</h3>
+                 <h3>-</h3>
+                </div>
+                <div class="img">
+                 <img src="rdc.png">
+                 <img src="AB.png">
+                 <img src="AOP.png">
+                </div>
+             </section>
+        </section>
+        <a href="lien"><h2 class="txtvideo">Découvrez notre ferme</h2></a>
+        <h3 class="stvideo">Dernière mise à jour: 29/03/2022</h3>
+        <div class="deco3"></div>
+        <section class="notregamme" id="gamme">
+            <img src="bggammev2.png" alt="img" id="bggamme">
+            <img src="bggammev3.png" alt="img" id="bggammesm">
+        </section>
+
+        <script>
+            let bggamme = document.getElementById('bggamme')
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                bggamme.style.bottom = value * 0.5 + 'px';
+            })
+        </script>
+        <script>
+            let bggammesm = document.getElementById('bggammesm')
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                bggammesm.style.bottom = value * 0.2 + 'px';
+            })
+        </script>
+
+        <section class="ficheproduithaut" id="calvados">
+                <div class="bloc1">
+                    <div class="cadre">
+                    <h2 class="titreficheproduit">Calvados</h2>
+                    <img src="calvados.png" alt="Bouteille de calvados hors d'âge et fabriqué en Normandie">
+                </div><div class="varianteshaut">
+                        <div class="titrevariante"><h3>5 ans d'âge</h3></div>
+                        <p class="desvariante">70 cl - AB - de couleur blonde et au goût fruité et vif. Il sera idéal pour le traditionnel trou normand, des cocktails, en cuisine...</p>
+                        <div class="titrevariante"><h3>10 ans d'âge</h3></div>
+                        <p class="desvariante">70 cl - AB - un calvados équilibré avec des notes fruitées et boisées</p>
+                        <div class="titrevariante"><h3>15 ans d'âge</h3></div>
+                        <p class="desvariante">70 cl - rondeur et boisé</p>
+                        <div class="titrevariante"><h3>20 ans d'âge</h3></div>
+                        <p class="desvariante">70 cl et 35 cl - les notes de bois, douceur</p>
+                        <div class="titrevariante"><h3>25 ans d'âge</h3></div>
+                        <p class="desvariante">70 cl et 35 cl - une couleur ambrée et des notes franches de boisé caractérisent ce calvados d'exception.</p>
+                    </div>
+                </div>
+                <div class="bloc2">
+                    <p class="desproduithaut"> " Pour la fabrication de nos calvados, nous utilisons un alambic à colonne : nos cidres totalement fermentés sont distillés pour obtenir une eau de vie à 71°, qui est ensuite élevée en fûts de chêne pendant de longues années. Le calvados sera mis en bouteille à 40° minimum. " </p>
+
+                    <img src="illucalvados.png" alt="Calvados entreposé dans des futs en chêne" class="illuproduithaut">
+                </div>
+        </section>
+
+        
+
+        <section class="ficheproduithaut" id="cidre">
+            <div class="bloc1">
+            <div class="cadre">
+                <h2 class="titreficheproduit">Nos Cidres</h2>
+                <img src="cidreaoc.png" alt="Bouteille de cidre aop produit en Normandie" class="cidreaoc">
+                <img src="cidredoux.png" alt="Bouteille de cidre aop produit en Normandie" class="cidredoux">
+                <img src="cidredemisec.png" alt="Bouteille de cidre aop produit en Normandie" class="cidredemisec">
+                <img src="cidrebrut.png" alt="Bouteille de cidre aop produit en Normandie" class="cidrebrut">
+            </div><div class="varianteshaut">
+                    <div class="titrevariante" id="aoc"><h3>AOC</h3></div>
+                    <p class="desvariante">- Tel goût<br> - tel teneur d'alcool</p>
+                    <div class="titrevariante" id="brut"><h3>Brut</h3></div>
+                    <p class="desvariante">Pointe tannique mêlée à une touche d’amertume</p>
+                    <div class="titrevariante" id="demisec"><h3>Demi-sec</h3></div>
+                    <p class="desvariante">- Tel goût<br> - tel teneur d'alcool</p>
+                    <div class="titrevariante" id="doux"><h3>Doux</h3></div>
+                    <p class="desvariante">onctueux et riche en bouche</p>
+                </div>
+            </div>
+            <div class="bloc2">
+                <p class="desproduithaut">" Après pressage, le moût est envoyé en cuves pour la clarification haute (5 à 12 jours). Le moût est soutiré et envoyé en tonneaux pour la 1ère fermentation effectuée grâce aux levures indigènes (1 à 3 mois). La densité souhaitée est atteinte, le cidre est soutiré et filtré afin de contrôler la population de levures. La 2ème fermentation a lieu en bouteille toujours grâce aux levures indigènes (minimum 3 mois), c'est ce qui va apporter l'effervescence à nos cidres : c'est la prise de mousse naturelle. Il ne reste plus qu'à déguster! "</p>
+
+                <img src="illucidre.jpg" alt="Calvados entreposé dans des futs en chêne" class="illuproduithaut">
+            </div>
+    </section>
+
+
+<section class="ficheproduithaut" id="pommeau">
+    <div class="bloc1">
+            <div class="cadre">
+                <h2 class="titreficheproduit">Pommeau</h2>
+                <img src="pommeau.png" alt="Bouteille de calvados hors d'âge et fabriqué en Normandie">
+            </div><div class="varianteshaut">
+                    <div class="titrevariante" id="caracpommeau"><h3>Caractéristiques:</h3></div>
+                    <p class="desvariante">- Tel goût<br> - tel teneur d'alcool</p>
+                </div>
+            </div>
+                <p class="desproduithaut">" Assemblage de moût de pomme et de jeune calvados, notre pommeau est vieilli au minimum 18 mois en fûts de chêne. A la mise en bouteille, il titre entre 16 et 18°. Il se déguste en apéritif, en cuisine ou même en digestif. "</p>
+
+                <img src="illustration calvados.jpg" alt="Calvados entreposé dans des futs en chêne" class="illuproduithaut">
+    </section>
+
+    <section class="ficheproduithaut" id="jusdepomme">
+        <div class="bloc1">
+        <div class="cadre">
+            <h2 class="titreficheproduit">Jus de pomme</h2>
+            <img src="jusdepomme.png" alt="Bouteille de calvados hors d'âge et fabriqué en Normandie">
+        </div><div class="varianteshaut">
+                <div class="titrevariante" id="caracjusdepomme"><h3>Caractéristiques:</h3></div>
+                <p class="desvariante">- Tel goût<br> - tel teneur d'alcool</p>
+            </div>
+        </div>
+        <div class="bloc2">
+            <p class="desproduithaut">fabriqué à partir de nos pommes à cidre choisies soigneusement et en partie ramassées à la main. Ses arômes sont intenses, corsés et fruités. Il est pasteurisé et mis en bouteille à la ferme. Vous avez 2 ans pour le déguster (si vous n'avez pas succombé avant!)</p>
+
+            <img src="illujusdepomme.jpg" alt="Calvados entreposé dans des futs en chêne" class="illuproduithaut">
+        </div>
+</section>
+
+<section class="ficheproduithaut" id="vinaigre">
+    <div class="bloc1">
+    <div class="cadre">
+        <h2 class="titreficheproduit">Vinaigre de cidre</h2>
+        <img src="shadowvinaigre.png" alt="Bouteille de calvados hors d'âge et fabriqué en Normandie">
+    </div><div class="varianteshaut">
+            <div class="titrevariante" id="caracvinaigre"><h3>Caractéristiques:</h3></div>
+            <p class="desvariante">- Tel goût<br> - tel teneur d'alcool</p>
+        </div>
+    </div>
+    <div class="bloc2">
+        <p class="desproduithaut">Ce produit est en cours d'élaboration, suspens !</p>
+
+        <img src="illuvinaigre.jpg" alt="Calvados entreposé dans des futs en chêne" class="illuproduithaut">
+    </div>
+</section>
+
+
+       
+<section class="histoire" id="histoire">
+    <h3 class="txthistoire">L'histoire de la ferme</h3>
+    <h4>1974, Précurseurs de l'agriculture biologique</h4>
+    <div class="histoireflex">
+    <p>C'est sur la route du cidre que cette ferme en pans de bois, typique de l'architecture normande du pays d'Auge, et ses 12 hectares furent le théatre, en 1974, d'un changement agricole radicale à l'époque, le passage total au bio en dépit d'un élevage de vache laitières et un rennoncement dès le départ au modèle de culture classique. Des pommiers traditionnels haute-tige, 25 variétés, des fermentations avec levure d'origine et en fûts de chêne, sans sulfite et sans conservateur. Une avancée sur son temps pour initier le basculement de notre consommation actuelle en recherche de produits bons nous et durables dans leur environement. A la tête de l'exploitation, Luc et Nicole Bignon ont toujours laissé maîtresse la nature qui le leurs rendait bien en retour avec des produits de qualité et appréciés de tous</p>
+    <img src="illu1974.jpg" class="imghistoireflex">
+    </div>
+    <h4>2021, La relève est assurée</h4>
+    <div class="histoireflex">
+    <p>Même les visionnaires agricoles arrivent un beau jour à la retraite et se soucient donc de passer la main, le savoir-faire et l'amour du métier. C'est donc à Estelle Bignon et Héloïse (nom) que revient l'honneur de faire perdurer cette expoitation et d'assurer les futures productions de Calvados, de pommeau, de Cidre et de jus de pomme et pourquoi pas même d'un tout nouveau vinaigre de cidre comme nous en consommant dans notre terroir. Formées durant de longs mois et portant les valeurs de simplicité, naturel et de bonne humeur, Estelle et Héloïse sont prêtes pour vous proposer des produits de qualité d'ici 1 an avec leur premier jus de pomme et dans plusieurs années les Calvados arrivés à la maturation souhaité. Patience est gage de qualité et les nouvelles exploitantes s'en assurerons pour vous!</p>
+    <img src="illustration panoramique.jpg" class="imghistoireflex">
+    </div>
+</section>
+<section class="groupeactualite" id="actualites">
+    <h3 class="txtactualite">Les actualités</h3>
+   <div class="actualite">
+    <div class="date">
+        <p class="jour">02</p>
+        <p class="mois">Juin</p>
+        <p class="pro">prochain</p>
+    </div>
+       <img src="imgactualite.jpg">
+       <div class="desactualite">
+       <h4>Titre actualite</h4>
+       <p class="descatualite">Petit paragraphe annoncant l'actualité en question, que s'est-il passé, que se passera-t-il, tout le monde attend ces informations exhaustives pour mettre fin au suspens insoutenable</p>
+       </div>
+   </div>
+   <div class="actualite">
+    <div class="date">
+        <p class="jour">28</p>
+        <p class="mois">Septembre</p>
+        <p class="pro">passé</p>
+    </div>
+    <img src="imgactualite.jpg">
+    <div class="desactualite">
+    <h4>Titre actualite</h4>
+    <p class="descatualite">Petit paragraphe annoncant l'actualité en question, que s'est-il passé, que se passera-t-il, tout le monde attend ces informations exhaustives pour mettre fin au suspens insoutenable</p>
+    </div>
+</div>
+<div class="actualite">
+    <div class="date">
+        <p class="jour">02</p>
+        <p class="mois">Juin</p>
+        <p class="pro">prochain</p>
+    </div>
+    <img src="imgactualite.jpg">
+    <div class="desactualite">
+    <h4>Titre actualite</h4>
+    <p class="descatualite">Petit paragraphe annoncant l'actualité en question, que s'est-il passé, que se passera-t-il, tout le monde attend ces informations exhaustives pour mettre fin au suspens insoutenable</p>
+    </div>
+</div>
+</section>
+<section class="map" id="map">
+    <h3 class="txtactualite">Où nous trouver</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2610.5595584614425!2d0.027770315969631962!3d49.13299948928526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e1d898dc297c93%3A0x40cca71047c252d7!2sBignon%20Luc!5e0!3m2!1sfr!2sfr!4v1639810751480!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+        <footer>
+            <h3>Conditions générales de vente</h3>
+            <h3>Mentions légales</h3>
+        </footer>   
+    </body>
+
+</html>
