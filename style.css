@@ -304,14 +304,6 @@ button{
     height: auto;
     overflow: hidden;
 }
-.bloc1{
-    width: 100%;
-    display: flex;
-}
-.block2{
-    width: 100%;
-    display: flex;
-}
 .ficheproduit{
     height: 600px;
     position: relative;
@@ -469,6 +461,8 @@ html {
 }
 .cidreaoc{
     width: 100px;
+    height: auto;
+    left: 0;
     opacity: 1;
     animation: cidreaoc 6s infinite;
 }
@@ -513,6 +507,7 @@ html {
     left: 0;
     opacity: 0;
     animation: cidredemisec 6s infinite;
+    z-index: 1;
 }
 @keyframes cidredemisec{
     0%{
@@ -537,6 +532,7 @@ html {
     left: 0;
     opacity: 0;
     animation: cidrebrut 6s infinite;
+    z-index: 2;
 }
 @keyframes cidrebrut{
     0%{
@@ -600,12 +596,14 @@ html {
     font-size: 20px;
 }
 .histoire p{
+    height: max-content;
     margin: 10px;
     padding: 10px;
     text-align: justify;
     font-size: 18px;
     background-color: rgba(255,255,255,0.5);
     border-radius: 10px;
+    margin-bottom: 100px;
 }
 .groupeactualite{
     height: auto;
@@ -1027,6 +1025,7 @@ footer{
     .coordo{
         width: 100%;
         font-size: 14px;
+        padding-top: 20px;
     }
     .coordo .img{
         width: 100%;
@@ -1054,21 +1053,16 @@ footer{
     .ficheproduithaut{
         display: block;
     }
-    .bloc1{
-        display: flex;
-    }
-    .bloc2{
-        display: block;
-    }
     .cadre{
         width: 30%;
         margin-left: 15%;
-        margin-right: 5%;
+        margin-right: 10%;
+        display: inline-block;
     }
     .varianteshaut{
         width: 30%;
-        margin-left: 5%;
-        margin-right: 15%;
+        display: inline-block;
+        vertical-align: top;
     }
     .illuproduithaut, #cidre .illuproduithaut{
         width: 80%;
@@ -1085,9 +1079,7 @@ footer{
         margin-bottom: 20px;
     }
     .histoire p{
-        height: max-content;
         font-size: 16px;
-        margin-bottom: 100px;
     }
     .histoireflex{
         margin-bottom: 100px;
@@ -1107,5 +1099,12 @@ footer{
     .notregamme{
         padding-top: 100px;
         margin-bottom: -100px;
+    }
+    .cadre{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .varianteshaut{
+        width: 40%;
     }
 }
