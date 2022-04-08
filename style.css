@@ -612,7 +612,7 @@ html {
 .actualite{
     display: flex;
     margin-bottom: 50px;
-    margin-left: 50px;
+    margin-left: 5%;
 }
 .actualite img{
     margin-left: 50px;
@@ -659,8 +659,8 @@ html {
 }
 .desactualite{
     display: block;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 .map{
     margin-left: 200px;
@@ -1106,5 +1106,11 @@ footer{
     }
     .varianteshaut{
         width: 40%;
+    }
+    .actualite img{
+        height: fit-content;
+    }
+    .desactualite{
+
     }
 }
