@@ -333,7 +333,6 @@ button{
     background-color: #5e4f46;
     color: white;
     height: 22px;
-    width: 80%;
     border-radius: 10px;
     text-align: center;
 }
@@ -391,25 +390,28 @@ button{
     margin-top: 100px;
 }
 #caracpommeau{
+    width: fit-content;
     background-color: #667500;
     padding-left: 2px;
-    padding-right: 22px;
+    padding-right: 5px;
 }
 #jusdepomme{
     margin-top: 100px;
 }
 #caracjusdepomme{
+    width: fit-content;
     background-color: rgba(0,0,0,0.3);
     padding-left: 2px;
-    padding-right: 22px;
+    padding-right: 5px;
 }
 #vinaigre{
     margin-top: 100px;
 }
 #caracvinaigre{
+    width: fit-content;
     background-color: #572691;
     padding-left: 2px;
-    padding-right: 22px;
+    padding-right: 5px;
 }
 html {
     overflow: scroll;
@@ -1050,31 +1052,42 @@ footer{
     }
 }
 @media only screen and (max-width: 1024px) {
+    .coordo{
+        font-size: 12px;
+    }
     .ficheproduithaut{
         display: block;
     }
     .cadre{
-        width: 30%;
-        margin-left: 15%;
-        margin-right: 10%;
+        width: 40%;
+        margin-left: 5%;
+        margin-right: 5%;
         display: inline-block;
     }
     .varianteshaut{
-        width: 30%;
+        width: 45%;
         display: inline-block;
         vertical-align: top;
     }
+    .titrevariante{
+        font-size: 32px;
+        height: 45px;
+        border-radius: 25px;
+    }
+    .desvariante{
+        font-size: 32px;
+    }
     .illuproduithaut, #cidre .illuproduithaut{
-        width: 80%;
-        margin-left: 10%;
+        width: 90%;
+        margin-left: 5%;
         height: 200px;
         position: initial;
         border-radius: 10px;
     }
     .desproduithaut{
         position: initial;
-        width: 80%;
-        margin-left: 10%;
+        width: 90%;
+        margin-left: 5%;
         height: max-content;
         margin-bottom: 20px;
     }
@@ -1087,8 +1100,8 @@ footer{
         height: auto;
     }
     .histoireflex img{
-        width: 80%;
-        margin-left: 10%;
+        width: 90%;
+        margin-left: 5%;
     }
     .groupeactualite{
         margin-top: 0px;
