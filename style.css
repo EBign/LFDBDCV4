@@ -39,7 +39,7 @@ header{
 .bouttonnav{
     position: absolute;
     visibility: hidden;
-    margin-top: 50px;
+    margin-top: 70px;
 }
 .barre{
     width: 60px;
@@ -184,9 +184,27 @@ li ul li{
 }
 .coordo img{
     width: 30%;
-    margin-top: 20px;
+    margin-top: 0px;
+    margin-bottom: 20px;
     margin-left: 35%;
     margin-right: 35%;
+}
+.text{
+    margin-top: 30px;
+}
+.scrolldown{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-bottom: -50px;
+    animation: haut 2s infinite;
+}
+.scrolldown img{
+position: absolute;
+transform: translateX(-200px);
 }
 .notregamme{
     position: relative;
@@ -313,11 +331,15 @@ button{
     margin-bottom: 200px;
 }
 .cadre{
-    display: block;
-    text-align: center;
     margin-left: 2%;
     width: 13%;
+    display: block;
     position: relative;
+    text-align: center;
+}
+.cadre img{
+    width: 100%;
+    height: auto;
 }
 .varianteshaut{
     margin-top: 40px;
@@ -337,7 +359,8 @@ button{
     text-align: center;
 }
 #aoc{
-    background-color: #e39536;
+    background-color: #273a24;
+    color: #e4e7de;
 }
 #brut{
     background-color: #b62039;
@@ -360,7 +383,7 @@ button{
     margin-left: 4%;
     margin-top: 15%;
     position: relative;
-    font-size: 150%;
+    font-size: 22px;
     font-weight: bold;
     font-style: italic;
     font-family: butlermedium;
@@ -391,7 +414,7 @@ button{
 }
 #caracpommeau{
     width: fit-content;
-    background-color: #667500;
+    background-color: #835635;
     padding-left: 2px;
     padding-right: 5px;
 }
@@ -400,7 +423,7 @@ button{
 }
 #caracjusdepomme{
     width: fit-content;
-    background-color: rgba(0,0,0,0.3);
+    background-color: #bf5517;
     padding-left: 2px;
     padding-right: 5px;
 }
@@ -429,9 +452,6 @@ html {
 .desproduithaut::-webkit-scrollbar-thumb {
     background: #FF0000;
     }
-.cadre img{
-    width: 100%;
-}
 .illuproduithaut{
     width: 25%;
     object-fit: cover;
@@ -462,10 +482,8 @@ html {
     color: #5e4f46;
 }
 .cidreaoc{
-    width: 100px;
+    width: 100%;
     height: auto;
-    left: 0;
-    opacity: 1;
     animation: cidreaoc 6s infinite;
 }
 @keyframes cidreaoc{
@@ -482,11 +500,25 @@ html {
         opacity: 1;
     }
 }
+@-moz-keyframes cidreaoc{
+    0%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 .cidredoux{
+    width: 100%;
     position: absolute;
-    width: 100px;
     left: 0;
-    opacity: 0;
+    bottom: 0;
     animation: cidredoux 6s infinite;
 }
 @keyframes cidredoux{
@@ -503,13 +535,26 @@ html {
         opacity: 0;
     }
 }
+@-moz-keyframes cidredoux{
+    0%{
+        opacity: 0;
+    }
+    25%{
+       opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
 .cidredemisec{
+    width: 100%;
     position: absolute;
-    width: 100px;
     left: 0;
-    opacity: 0;
+    bottom: 0;
     animation: cidredemisec 6s infinite;
-    z-index: 1;
 }
 @keyframes cidredemisec{
     0%{
@@ -528,15 +573,45 @@ html {
         opacity: 0;
     }
 }
+@-moz-keyframes cidredemisec{
+    0%{
+        opacity: 0;
+    }
+    25%{
+       opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
 .cidrebrut{
+    width: 100%;
     position: absolute;
-    width: 300px;
     left: 0;
-    opacity: 0;
+    bottom: 0;
     animation: cidrebrut 6s infinite;
-    z-index: 2;
 }
 @keyframes cidrebrut{
+    0%{
+        opacity: 0;
+    }
+    50%{
+       opacity: 0;
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@-moz-keyframes cidrebrut{
     0%{
         opacity: 0;
     }
@@ -682,7 +757,31 @@ footer{
     border-top: 2px solid #9e8e85;
     justify-content: space-between;
     justify-content: space-around;
+    font-family: 14px;
 }
+.remonter{
+    position: fixed;
+    top: 90%;
+    left: 87%;
+    height: 150px;
+    z-index: 3;
+    transition: 0.5s;
+    display: none;
+  }
+.remonter:hover{
+    animation: haut 2s infinite;
+}
+@keyframes haut{
+    0%{
+      transform: translateY(0);
+    }
+    50%{
+      transform: translateY(20px);
+    }
+    100%{
+      transform: translateY(0);
+    }
+  }
 
 
 @media only screen and (max-width: 1760px){
@@ -716,6 +815,7 @@ footer{
     .ficheproduithaut{
         margin-top: -700px;
     }
+
     .notregamme{
         position: relative;
         height: 300px;
@@ -793,9 +893,6 @@ footer{
 }
 
 @media only screen and (max-width: 1380px) {
-    .desproduithaut{
-        font-size: 120%;
-    }
     #cidre .illuproduithaut{
         top: 45%;
         height: 50%;
@@ -827,7 +924,7 @@ footer{
         box-shadow: none;
     }
     .montreheader{
-        height: 900px;
+        height: 1100px;
     }
     .logo{
         margin: 0;
@@ -838,7 +935,7 @@ footer{
     .bouttonnav{
         visibility: visible;
         left: 50%;
-        top: 170px;
+        top: 190px;
         transform: translateX(-50%);
         cursor: default;
         margin-top: 80px;
@@ -933,6 +1030,9 @@ footer{
     .accueil{
         margin-left: 0px;
     }
+    .scrolldown{
+        display: none;
+    }
     .gamme{
         margin-left: 0px;
         width: 100%;
@@ -987,12 +1087,6 @@ footer{
         width: 60%;
         height: auto;
     }
-    .txtvideo, .stvideo{
-        padding-left: 20px;
-    }
-    .deco3{
-        margin-left: 20px;
-    }
     .ficheproduithaut{
         margin-left: 0px;
         margin-top: -200px;
@@ -1026,7 +1120,7 @@ footer{
     }
     .coordo{
         width: 100%;
-        font-size: 14px;
+        font-size: 24px;
         padding-top: 20px;
     }
     .coordo .img{
@@ -1041,9 +1135,6 @@ footer{
         height: auto;
         margin: 0;
     }
-    .txtvideo, .stvideo, .deco3{
-        visibility: hidden;
-    }
     #bggammesm{
         visibility: visible;
     }
@@ -1052,8 +1143,18 @@ footer{
     }
 }
 @media only screen and (max-width: 1024px) {
-    .coordo{
-        font-size: 12px;
+    .logo{
+        width: 300px;
+        height: auto;
+    }
+    .titregamme{
+        font-size: 34px;
+    }
+    .titregammeplus{
+        font-size: 38px;
+    }
+    li ul li{
+        font-size: 28px;
     }
     .ficheproduithaut{
         display: block;
@@ -1065,7 +1166,7 @@ footer{
         display: inline-block;
     }
     .varianteshaut{
-        width: 45%;
+        width: 43%;
         display: inline-block;
         vertical-align: top;
     }
@@ -1080,7 +1181,7 @@ footer{
     .illuproduithaut, #cidre .illuproduithaut{
         width: 90%;
         margin-left: 5%;
-        height: 200px;
+        height: 800px;
         position: initial;
         border-radius: 10px;
     }
@@ -1090,9 +1191,11 @@ footer{
         margin-left: 5%;
         height: max-content;
         margin-bottom: 20px;
+        font-size: 30px;
     }
     .histoire p{
         font-size: 16px;
+        padding: 20px;
     }
     .histoireflex{
         margin-bottom: 100px;
@@ -1104,7 +1207,66 @@ footer{
         margin-left: 5%;
     }
     .groupeactualite{
-        margin-top: 0px;
+        margin-top: -50px;
+    }
+    .date, .actualite img, .desactualite{
+        display: inline-block;
+    }
+    .actualite{
+        display: block;
+    }
+    .date{
+        position: relative;
+        width: 30%;
+        height: 400px;
+        margin: 5%;
+        margin-top: -500px;
+    }
+    .jour{
+        font-size: 80px;
+        top: 50px;
+        left: 50px;
+    }
+    .mois, .pro{
+        font-size: 40px;
+    }
+    .mois{
+        top: 50px;
+        left: 150px;
+    }
+    .pro{
+        top: 200px;
+        left: 200px;
+    }
+    .actualite img{
+        width: 40%;
+        margin: 5%;
+        height: auto;
+    }
+    .desactualite{
+        font-size: 34px;
+    }
+    .coordo{
+        font-size: 16px;
+        -webkit-font-size: 20px;
+        -moz-font-size: 20px;
+    }
+    .titregamme{
+        font-size: 46px;
+        font-weight: bold;
+    }
+    .titregammeplus{
+        font-size: 46px;
+        font-weight: bold;
+    }
+    li ul li{
+        font-size: 34px;
+    }
+    footer{
+        font-size: 30px;
+    }
+    .remonter{
+        display: initial;
     }
 }
 
@@ -1123,7 +1285,17 @@ footer{
     .actualite img{
         height: fit-content;
     }
-    .desactualite{
-
+    .text{
+        font-size: 34px;
+    }
+    .logo{
+        padding-bottom: 100px;
+    }
+    nav{
+        padding-right: 3%;
+        padding-top: 50px;
+    }
+    .titreficheproduit{
+        font-size: 120px;
     }
 }
